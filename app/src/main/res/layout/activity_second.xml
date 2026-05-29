@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Используем RelativeLayout: элементы позиционируются относительно родителя и друг друга -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/screen_padding"
+    android:background="@color/background"
+    tools:context=".SecondActivity">
+
+    <!-- Заголовок — привязан к верху родителя -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_second"
+        android:textSize="@dimen/text_title"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Карточка с данными пользователя — ниже заголовка -->
+    <LinearLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/card_bg"
+        android:padding="16dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="16dp">
+
+        <!-- Блок "Имя" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_name"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_label"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            tools:text="Иван Иванов"/>
+
+        <!-- Блок "Email" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_email"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_label"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            tools:text="ivan@mail.ru"/>
+
+        <!-- Блок "Возраст" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_age"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_label"
+            android:textStyle="bold"
+            tools:text="25"/>
+
+    </LinearLayout>
+
+    <!-- Кнопка "Далее" — привязана к низу родителя -->
+    <Button
+        android:id="@+id/btnLayouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_layouts"
+        android:onClick="onGoToLayouts"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Кнопка "Назад" — над кнопкой "Далее" -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_back"
+        android:onClick="onBackToMain"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_button"
+        android:layout_above="@id/btnLayouts"
+        android:layout_marginBottom="8dp"/>
+
+</RelativeLayout>

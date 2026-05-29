@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Практика2</string>
+
+    <!-- Заголовки активностей -->
+    <string name="title_main">Регистрация пользователя</string>
+    <string name="title_second">Профиль пользователя</string>
+    <string name="title_layouts">Контейнеры разметки</string>
+
+    <!-- Метки полей -->
+    <string name="lbl_name">Имя</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_age">Возраст</string>
+
+    <!-- Подсказки в полях ввода -->
+    <string name="hint_name">Введите ваше имя</string>
+    <string name="hint_email">Введите ваш email</string>
+    <string name="hint_age">Введите ваш возраст</string>
+
+    <!-- Кнопки -->
+    <string name="btn_next">Далее</string>
+    <string name="btn_back">← Назад</string>
+    <string name="btn_layouts">Демо контейнеров</string>
+
+    <!-- Секции демо-активности -->
+    <string name="lbl_linear">LinearLayout — горизонтальный, равные веса</string>
+    <string name="lbl_relative">RelativeLayout — привязка к позиции</string>
+    <string name="lbl_frame">FrameLayout — наложение слоёв</string>
+    <string name="pos_left_top">Лево Верх</string>
+    <string name="pos_right_bottom">Право Низ</string>
+    <string name="frame_bg_text">ФОН</string>
+    <string name="frame_fg_btn">Передний план</string>
+
+    <!-- Сообщения об ошибках -->
+    <string name="error_empty_fields">Заполните все поля</string>
+    <string name="error_invalid_age">Возраст должен быть числом</string>
+</resources>
