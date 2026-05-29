@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Базовый стиль: наследуем DayNight, отключаем ActionBar (управляем вручную) -->
     <style name="Base.Theme.Practise2" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Основной цвет темы (кнопки, акценты) -->
         <item name="colorPrimary">@color/primary</item>
-        <!-- Тёмный вариант primary (статус-бар) -->
-        <item name="colorPrimaryDark">@color/secondary</item>
-        <!-- Акцентный цвет -->
-        <item name="colorAccent">@color/accent</item>
-        <!-- Глобальный размер текста -->
-        <item name="android:textSize">@dimen/text_label</item>
-        <!-- Фон всех экранов -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSurface">@color/card_bg</item>
+        <item name="colorOnSurface">@color/text_primary</item>
         <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/background</item>
     </style>
 
-    <!-- Финальная тема приложения — наследует Base -->
     <style name="Theme.Practise2" parent="Base.Theme.Practise2"/>
 
 </resources>

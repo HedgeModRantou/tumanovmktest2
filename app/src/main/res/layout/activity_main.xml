@@ -9,7 +9,6 @@
     android:background="@color/background"
     tools:context=".MainActivity">
 
-    <!-- Заголовок -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="0dp"
@@ -24,7 +23,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 
-    <!-- Подпись "Имя" -->
     <TextView
         android:id="@+id/lblName"
         android:layout_width="wrap_content"
@@ -36,7 +34,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="32dp"/>
 
-    <!-- Поле ввода имени -->
     <EditText
         android:id="@+id/editName"
         android:autofillHints="name"
@@ -53,7 +50,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="4dp"/>
 
-    <!-- Подпись "Email" -->
     <TextView
         android:id="@+id/lblEmail"
         android:layout_width="wrap_content"
@@ -65,7 +61,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <!-- Поле ввода email -->
     <EditText
         android:id="@+id/editEmail"
         android:autofillHints="emailAddress"
@@ -82,7 +77,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="4dp"/>
 
-    <!-- Подпись "Возраст" -->
     <TextView
         android:id="@+id/lblAge"
         android:layout_width="wrap_content"
@@ -94,7 +88,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <!-- Поле ввода возраста -->
     <EditText
         android:id="@+id/editAge"
         android:autofillHints="no"
@@ -111,7 +104,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="4dp"/>
 
-    <!-- Кнопка "Далее" -->
     <Button
         android:id="@+id/btnNext"
         android:layout_width="0dp"
@@ -126,7 +118,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 
-    <!-- Кнопка "О контейнерах" -->
     <Button
         android:id="@+id/btnLayouts"
         android:layout_width="0dp"

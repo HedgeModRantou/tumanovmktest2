@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Основные цвета темы -->
-    <color name="primary">#1565C0</color>       <!-- насыщенный синий — основные кнопки -->
-    <color name="secondary">#546E7A</color>      <!-- серо-синий — второстепенные кнопки -->
-    <color name="accent">#00897B</color>         <!-- бирюзовый — акцентные элементы -->
+    <color name="primary">#1565C0</color>
+    <color name="secondary">#546E7A</color>
+    <color name="accent">#00897B</color>
 
-    <!-- Фон и поверхности -->
-    <color name="background">#F5F7FA</color>     <!-- светло-серый фон экранов -->
-    <color name="card_bg">#FFFFFF</color>        <!-- белый для карточек -->
+    <color name="background">#F5F7FA</color>
+    <color name="card_bg">#FFFFFF</color>
 
-    <!-- Текст -->
-    <color name="text_primary">#212121</color>   <!-- почти чёрный — основной текст -->
-    <color name="text_secondary">#757575</color> <!-- серый — подписи и метки -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
     <color name="white">#FFFFFF</color>
 
-    <!-- Специальные -->
-    <color name="frame_bg_text_color">#E0E0E0</color> <!-- светло-серый для фонового текста в FrameLayout -->
+    <color name="frame_bg_text_color">#E0E0E0</color>
 
-    <!-- Системные (нужны для темы Material) -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>

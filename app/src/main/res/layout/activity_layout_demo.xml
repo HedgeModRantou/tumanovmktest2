@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Корневой контейнер — LinearLayout (вертикальный).
-    Секции идут сверху вниз, каждая занимает свою долю экрана через layout_weight.
--->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,7 +9,6 @@
     android:padding="@dimen/screen_padding"
     tools:context=".LayoutDemoActivity">
 
-    <!-- Заголовок -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,10 +19,6 @@
         android:gravity="center"
         android:layout_marginBottom="8dp"/>
 
-    <!-- ══════════════════════════════════════════
-         СЕКЦИЯ 1: LinearLayout (горизонтальный)
-         Три кнопки делят пространство: 1/3, 1/3, 1/3
-         ══════════════════════════════════════════ -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -76,10 +67,6 @@
 
     </LinearLayout>
 
-    <!-- ══════════════════════════════════════════
-         СЕКЦИЯ 2: RelativeLayout
-         Надпись в левом верхнем, кнопка в правом нижнем
-         ══════════════════════════════════════════ -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -117,10 +104,6 @@
 
     </RelativeLayout>
 
-    <!-- ══════════════════════════════════════════
-         СЕКЦИЯ 3: FrameLayout
-         Два элемента накладываются: фоновый текст и кнопка поверх
-         ══════════════════════════════════════════ -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -135,7 +118,6 @@
         android:background="@color/card_bg"
         android:layout_marginBottom="8dp">
 
-        <!-- Фоновый элемент -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -146,7 +128,6 @@
             android:gravity="center"
             android:padding="8dp"/>
 
-        <!-- Элемент поверх (foreground) -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -158,7 +139,6 @@
 
     </FrameLayout>
 
-    <!-- Кнопка "Назад" -->
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

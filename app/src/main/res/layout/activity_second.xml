@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Используем RelativeLayout: элементы позиционируются относительно родителя и друг друга -->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,7 +8,6 @@
     android:background="@color/background"
     tools:context=".SecondActivity">
 
-    <!-- Заголовок — привязан к верху родителя -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
@@ -22,7 +20,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginBottom="24dp"/>
 
-    <!-- Карточка с данными пользователя — ниже заголовка -->
     <LinearLayout
         android:id="@+id/cardLayout"
         android:layout_width="match_parent"
@@ -33,7 +30,6 @@
         android:layout_below="@id/tvTitle"
         android:layout_marginTop="16dp">
 
-        <!-- Блок "Имя" -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +47,6 @@
             android:layout_marginBottom="12dp"
             tools:text="Иван Иванов"/>
 
-        <!-- Блок "Email" -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -69,7 +64,6 @@
             android:layout_marginBottom="12dp"
             tools:text="ivan@mail.ru"/>
 
-        <!-- Блок "Возраст" -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -88,7 +82,6 @@
 
     </LinearLayout>
 
-    <!-- Кнопка "Далее" — привязана к низу родителя -->
     <Button
         android:id="@+id/btnLayouts"
         android:layout_width="match_parent"
@@ -101,7 +94,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="8dp"/>
 
-    <!-- Кнопка "Назад" — над кнопкой "Далее" -->
     <Button
         android:id="@+id/btnBack"
         android:layout_width="match_parent"

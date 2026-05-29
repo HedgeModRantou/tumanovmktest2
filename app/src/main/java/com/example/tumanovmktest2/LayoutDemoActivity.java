@@ -13,7 +13,6 @@ public class LayoutDemoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_layout_demo);
     }
 
-    // Кнопка "Назад" — finish() удаляет активность из BackStack
     public void onBackPressed(View view) {
         finish();
     }

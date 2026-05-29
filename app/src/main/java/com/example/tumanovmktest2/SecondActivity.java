@@ -21,7 +21,6 @@ public class SecondActivity extends AppCompatActivity {
         tvEmail = findViewById(R.id.tvEmail);
         tvAge   = findViewById(R.id.tvAge);
 
-        // Извлекаем объект из Intent
         MyObject obj = (MyObject) getIntent().getSerializableExtra("myObject");
         if (obj != null) {
             tvName.setText(obj.getName());
@@ -30,14 +29,12 @@ public class SecondActivity extends AppCompatActivity {
         }
     }
 
-    // Кнопка "Назад" — возврат на MainActivity с очисткой стека выше неё
     public void onBackToMain(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 
-    // Кнопка "Далее" — переход на LayoutDemoActivity
     public void onGoToLayouts(View view) {
         Intent intent = new Intent(this, LayoutDemoActivity.class);
         startActivity(intent);
